@@ -116,7 +116,7 @@ const Home = () => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <button>Search</button>
+        
       </div>
 
       {/* Job Categories */}

@@ -29,19 +29,7 @@ h1 {
   margin-right: 10px;
 }
 
-.search-bar button {
-  padding: 5px 10px; /* Further reduced size */
-  background-color: #1dbf73;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px; /* Reduced font size */
-}
 
-.search-bar button:hover {
-  background-color: #17a564;
-}
 
 /* Job Categories */
 .categories {
