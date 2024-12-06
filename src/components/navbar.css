@@ -1,0 +1,103 @@
+/* General Navbar Styles */
+.navbar {
+    background-color: #1564a5;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px; /* Rounded edges for the navbar */
+    border: 2px solid #444; /* Initial border color */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+  }
+  
+  .navbar-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: center; /* Center the content */
+  }
+  
+  .navbar-item {
+    margin: 0 1rem;
+    position: relative;
+  }
+  
+  .navbar-item a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s, border-color 0.3s, background-color 0.3s;
+    text-align: center; /* Center the text */
+    border-radius: 5px; /* Rounded edges for links */
+    padding: 0.5rem; /* Padding for better visual appearance */
+  }
+  
+  .navbar-item a:hover {
+    color: #333; /* Change text color on hover */
+    font-size: large; /* Change background color on hover */
+    transform: scale(1.1);
+    border-color: #61dafb; /* Change border color on hover */
+  }
+  
+  /* Dropdown Menu Styles */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    border-radius: 5px; /* Rounded edges for dropdown */
+    padding: 0.5rem 0;
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s, border-color 0.3s, background-color 0.3s;
+  }
+  
+  .dropdown-item {
+    margin: 0;
+  }
+  
+  .dropdown-item a {
+    padding: 0.5rem 1rem;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s, padding-left 0.3s, border-color 0.3s, color 0.3s;
+    border-radius: 5px; /* Rounded edges for dropdown items */
+  }
+  
+  .dropdown-item a:hover {
+    background-color: #61dafb; /* Change background color on hover */
+    color: #333; /* Change text color on hover */
+    border-color: #61dafb; /* Change border color on hover */
+  }
+  
+  /* Show dropdown menu on hover */
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Interactive styles */
+  .navbar-item a:active {
+    color: #21a1f1;
+    transform: scale(0.9);
+  }
+  
+  .dropdown-item a:active {
+    background-color: #333;
+  }
+  
+  /* Change border color on hover for the navbar */
+  .navbar:hover {
+    border-color: #61dafb;
+  }
+  
